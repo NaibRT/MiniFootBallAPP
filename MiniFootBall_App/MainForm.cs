@@ -22,5 +22,10 @@ namespace MiniFootBall_App
         {
             new Register().ShowDialog();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new Login().ShowDialog();
+        }
     }
 }

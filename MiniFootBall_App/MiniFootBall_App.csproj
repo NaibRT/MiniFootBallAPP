@@ -59,31 +59,58 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901161156043_MiniFootball.cs" />
-    <Compile Include="Migrations\201901161156043_MiniFootball.Designer.cs">
-      <DependentUpon>201901161156043_MiniFootball.cs</DependentUpon>
+    <Compile Include="Migrations\201901161516276_MiniFootball.cs" />
+    <Compile Include="Migrations\201901161516276_MiniFootball.Designer.cs">
+      <DependentUpon>201901161516276_MiniFootball.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Entity.cs" />
+    <Compile Include="Model\Extensions.cs" />
+    <Compile Include="Model\loginUser.cs" />
     <Compile Include="Model\Match.cs" />
     <Compile Include="Model\MiniFootballContext.cs" />
     <Compile Include="Model\Model_Validation.cs" />
+    <Compile Include="Model\Request.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\Status.cs" />
     <Compile Include="Model\Team.cs" />
+    <Compile Include="Page\AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Page\Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Page\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Page\UserPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901161156043_MiniFootball.resx">
-      <DependentUpon>201901161156043_MiniFootball.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901161516276_MiniFootball.resx">
+      <DependentUpon>201901161516276_MiniFootball.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>

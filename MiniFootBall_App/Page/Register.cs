@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +24,9 @@ namespace MiniFootBall_App.Page
             DialogResult result = openFileDialog1.ShowDialog();
             if (result==DialogResult.OK)
             {
-                file_txt = openFileDialog1.FileName;
-                pictureBox1.Image = new Bitmap(file_txt);
-                
+                file_txt = Guid.NewGuid()+Path.GetFileName(openFileDialog1.FileName);
+                pictureBox1.Image = new Bitmap(openFileDialog1.FileName);
+
             }
         }
 
@@ -47,6 +48,7 @@ namespace MiniFootBall_App.Page
             {
                 using (MiniFootballContext db=new MiniFootballContext())
                 {
+                    this.Addfile(openFileDialog1.FileName);
                     db.Players.Add(newUser);
                     db.SaveChanges();
 
@@ -83,7 +85,6 @@ namespace MiniFootBall_App.Page
                 }
             }
         }
-
 
     }
 }

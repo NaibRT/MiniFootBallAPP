@@ -7,13 +7,13 @@ namespace MiniFootBall_App.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class MiniFootBallCreation : IMigrationMetadata
+    public sealed partial class MiniFootball : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MiniFootBallCreation));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MiniFootball));
         
         string IMigrationMetadata.Id
         {
-            get { return "201901151618139_MiniFootBallCreation"; }
+            get { return "201901161156043_MiniFootball"; }
         }
         
         string IMigrationMetadata.Source

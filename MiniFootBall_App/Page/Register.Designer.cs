@@ -153,9 +153,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(575, 113);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
@@ -186,45 +188,40 @@
             this.SurnameValidlabel.AutoSize = true;
             this.SurnameValidlabel.Location = new System.Drawing.Point(267, 169);
             this.SurnameValidlabel.Name = "SurnameValidlabel";
-            this.SurnameValidlabel.Size = new System.Drawing.Size(35, 13);
+            this.SurnameValidlabel.Size = new System.Drawing.Size(0, 13);
             this.SurnameValidlabel.TabIndex = 18;
-            this.SurnameValidlabel.Text = "Name";
             // 
             // AgeValidlabel
             // 
             this.AgeValidlabel.AutoSize = true;
             this.AgeValidlabel.Location = new System.Drawing.Point(267, 233);
             this.AgeValidlabel.Name = "AgeValidlabel";
-            this.AgeValidlabel.Size = new System.Drawing.Size(35, 13);
+            this.AgeValidlabel.Size = new System.Drawing.Size(0, 13);
             this.AgeValidlabel.TabIndex = 19;
-            this.AgeValidlabel.Text = "Name";
             // 
             // EmailValidlabel
             // 
             this.EmailValidlabel.AutoSize = true;
             this.EmailValidlabel.Location = new System.Drawing.Point(267, 296);
             this.EmailValidlabel.Name = "EmailValidlabel";
-            this.EmailValidlabel.Size = new System.Drawing.Size(35, 13);
+            this.EmailValidlabel.Size = new System.Drawing.Size(0, 13);
             this.EmailValidlabel.TabIndex = 20;
-            this.EmailValidlabel.Text = "Name";
             // 
             // PasswordValidlabel
             // 
             this.PasswordValidlabel.AutoSize = true;
             this.PasswordValidlabel.Location = new System.Drawing.Point(267, 355);
             this.PasswordValidlabel.Name = "PasswordValidlabel";
-            this.PasswordValidlabel.Size = new System.Drawing.Size(35, 13);
+            this.PasswordValidlabel.Size = new System.Drawing.Size(0, 13);
             this.PasswordValidlabel.TabIndex = 21;
-            this.PasswordValidlabel.Text = "Name";
             // 
             // filelabel7
             // 
             this.filelabel7.AutoSize = true;
             this.filelabel7.Location = new System.Drawing.Point(572, 273);
             this.filelabel7.Name = "filelabel7";
-            this.filelabel7.Size = new System.Drawing.Size(35, 13);
+            this.filelabel7.Size = new System.Drawing.Size(0, 13);
             this.filelabel7.TabIndex = 22;
-            this.filelabel7.Text = "Name";
             // 
             // Register
             // 

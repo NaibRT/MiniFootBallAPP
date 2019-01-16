@@ -3,7 +3,7 @@ namespace MiniFootBall_App.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class MiniFootBallCreation : DbMigration
+    public partial class MiniFootball : DbMigration
     {
         public override void Up()
         {
@@ -17,15 +17,12 @@ namespace MiniFootBall_App.Migrations
                         AwayTeam_Score = c.Int(nullable: false),
                         GuestTeam_Score = c.Int(nullable: false),
                         GuestTeamId = c.Int(nullable: false),
-                        Team_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Teams", t => t.Team_Id)
                 .ForeignKey("dbo.Teams", t => t.AwayTeamId, cascadeDelete: false)
                 .ForeignKey("dbo.Teams", t => t.GuestTeamId, cascadeDelete: false)
                 .Index(t => t.AwayTeamId)
-                .Index(t => t.GuestTeamId)
-                .Index(t => t.Team_Id);
+                .Index(t => t.GuestTeamId);
             
             CreateTable(
                 "dbo.Teams",
@@ -42,12 +39,12 @@ namespace MiniFootBall_App.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Surname = c.String(),
-                        Email = c.String(),
-                        Password = c.String(),
+                        Name = c.String(nullable: false),
+                        Surname = c.String(nullable: false),
+                        Email = c.String(nullable: false),
+                        Password = c.String(nullable: false),
                         Age = c.Int(nullable: false),
-                        File = c.String(),
+                        File = c.String(nullable: false),
                         Status = c.Byte(nullable: false),
                         TeamId = c.Int(),
                     })
@@ -62,9 +59,7 @@ namespace MiniFootBall_App.Migrations
             DropForeignKey("dbo.Matches", "GuestTeamId", "dbo.Teams");
             DropForeignKey("dbo.Matches", "AwayTeamId", "dbo.Teams");
             DropForeignKey("dbo.Users", "TeamId", "dbo.Teams");
-            DropForeignKey("dbo.Matches", "Team_Id", "dbo.Teams");
             DropIndex("dbo.Users", new[] { "TeamId" });
-            DropIndex("dbo.Matches", new[] { "Team_Id" });
             DropIndex("dbo.Matches", new[] { "GuestTeamId" });
             DropIndex("dbo.Matches", new[] { "AwayTeamId" });
             DropTable("dbo.Users");

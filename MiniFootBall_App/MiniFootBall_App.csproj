@@ -59,9 +59,9 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201901151618139_MiniFootBallCreation.cs" />
-    <Compile Include="Migrations\201901151618139_MiniFootBallCreation.Designer.cs">
-      <DependentUpon>201901151618139_MiniFootBallCreation.cs</DependentUpon>
+    <Compile Include="Migrations\201901161156043_MiniFootball.cs" />
+    <Compile Include="Migrations\201901161156043_MiniFootball.Designer.cs">
+      <DependentUpon>201901161156043_MiniFootball.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Entity.cs" />
@@ -82,8 +82,8 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201901151618139_MiniFootBallCreation.resx">
-      <DependentUpon>201901151618139_MiniFootBallCreation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201901161156043_MiniFootball.resx">
+      <DependentUpon>201901161156043_MiniFootball.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -110,6 +110,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

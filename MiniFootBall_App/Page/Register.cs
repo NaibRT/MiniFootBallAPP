@@ -24,6 +24,8 @@ namespace MiniFootBall_App.Page
             if (result==DialogResult.OK)
             {
                 file_txt = openFileDialog1.FileName;
+                pictureBox1.Image = new Bitmap(file_txt);
+                
             }
         }
 
@@ -81,5 +83,7 @@ namespace MiniFootBall_App.Page
                 }
             }
         }
+
+
     }
 }

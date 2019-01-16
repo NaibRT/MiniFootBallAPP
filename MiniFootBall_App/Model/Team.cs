@@ -11,13 +11,11 @@ namespace MiniFootBall_App.Model
         public Team()
         {
             Players = new HashSet<User>();
-            Matches = new HashSet<Match>();
         }
         public string Name { get; set; }
         public int Scorr { get; set; }
 
         public ICollection<User> Players{get;set;}
-        public ICollection<Match> Matches { get; set; }
 
     }
 }

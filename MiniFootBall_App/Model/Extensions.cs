@@ -14,6 +14,10 @@ namespace MiniFootBall_App.Model
         public static void Addfile(this Register form,string imgPath)
         {
             var PATH = Path.Combine(@"C:/Users\naibrt/source\repos/MiniFootBall_App/MiniFootBall_App/img", Path.GetFileName(imgPath));
+            if (File.Exists(PATH))
+            {
+
+            }
             File.Copy(imgPath, PATH);
         }
     }

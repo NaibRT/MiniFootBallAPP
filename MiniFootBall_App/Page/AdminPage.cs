@@ -15,6 +15,22 @@ namespace MiniFootBall_App.Page
         public AdminPage()
         {
             InitializeComponent();
+         
+        }
+
+        private void addTeamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void userRequestsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

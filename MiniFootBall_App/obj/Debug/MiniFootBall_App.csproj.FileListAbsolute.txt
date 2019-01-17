@@ -34,3 +34,6 @@ C:\Users\Acer\Desktop\MiniFotballApp\MiniFootBall_App\obj\Debug\MiniFootBall_App
 C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.Migrations.MiniFootball.resources
 C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.Page.AdminPage.resources
 C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.Page.Login.resources
+C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.MyComponent.Team.resources
+C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.MyComponent.Request.resources
+C:\Users\naibrt\source\repos\MiniFootBall_App\MiniFootBall_App\obj\Debug\MiniFootBall_App.MyComponent.User.resources
